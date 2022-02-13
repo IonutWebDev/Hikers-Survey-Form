@@ -1,0 +1,85 @@
+body {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    background-image: url("https://images.unsplash.com/photo-1571249692357-fd1418f95042?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(34, 78, 63, 0.568);
+    padding: 2.5em;
+    border-radius: 0.3em;
+    color: white;
+    transition: ease all .4s; /* Using this so the @media queries changes the container size smoothly */
+}
+
+.header{
+    border-bottom: 5px dotted white;
+}
+
+/* @MEDIA QUERIES */
+
+@media(max-width: 576px) {
+    .container{
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .container{
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .container{
+        max-width: 700px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container{
+        max-width: 800px;
+    }
+}
+
+/* Type of Hiking  */
+.check-all{
+    font-size: 0.8em;
+}
+
+/* input checkbox and radio for size and margin */
+.input-checkbox,
+.input-radio{
+    /* display: inline-block; */
+    margin-right: 0.5em;
+    min-height: 0.9em;
+    min-width: 0.9em;
+}
+
+/* Editing the placeholder text */
+.input-textarea::placeholder {
+    font-size: 15px;
+    line-height: 3;
+    /* padding-left: 0.7em; */
+}
+
+.input-textarea{
+    padding-left: 0.7em;
+    padding-top: 0.3em;
+}
+
+/* The binoculars icon */
+.bi-binoculars{
+    font-size: 1.2em;
+    transition: transform 0.3s ease-out;
+}
+
+.bi-binoculars:hover{
+    color: black;
+    transform: perspective(400px) translateZ(55px);
+}
